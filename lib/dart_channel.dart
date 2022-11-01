@@ -1,4 +1,4 @@
-class FlowData<T> {
+class DartChannel<T> {
   List<T?> values = [];
   int bufferSize;
 
@@ -44,7 +44,7 @@ class FlowData<T> {
     _listeners.clear();
   }
 
-  FlowData({
+  DartChannel({
     required this.bufferSize,
   }) {
     assert(bufferSize > 0);
